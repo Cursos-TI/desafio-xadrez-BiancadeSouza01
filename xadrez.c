@@ -1,22 +1,50 @@
 #include <stdio.h>
 
-// Desafio de Xadrez - MateCheck
-// Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
-// O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
 
-int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+#include <stdio.h>
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+int main(){
+    
+    int t = 0, b = 0, r = 0;
+    printf("Jogo de Xadrez\n");
+    printf("Tabuleiro 8x8\n");
+    printf("Colunas: a b c d e f g h\n");
+    printf("Linhas: 1 2 3 4 5 6 7 8\n");
+    printf("Movimento da Torre:\n");
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
+    for (t = 0; t < 5;t++){
+        printf("Direita\n");
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+    }
+    
+       printf("movimento do bispo:\n");
+    while (b < 5){
+        printf("Diagonal direita para cima\n");
+      
+        b++;
+     }
+   
+        printf("Movimento da Rainha\n");
+    
+    do {
+        printf("Direita\n");
+        r++;
 
+    } while (r < 8);
+    
+
+    printf(" Fim das jogadas\n");
+    
+
+        
+     
+
+
+    return 0;
+}
+
+    
+    
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
     // Um loop pode representar a movimentação horizontal e outro vertical.
@@ -27,6 +55,5 @@ int main() {
 
     // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
     // Inclua o uso de continue e break dentro dos loops.
-
-    return 0;
-}
+ 
+    
