@@ -1,39 +1,62 @@
 #include <stdio.h>
+ 
+    void moverTorre(int casas){
+        if(casas > 0){
+            printf("diereita\n");
+            moverTorre(casas - 1);
+        }
+    
+    }
 
+    void moverBispo(int casas){
+         if(casas > 0){
+            printf("diagonal direita para cima\n");
+            moverBispo(casas - 1);
+          }  
+    }    
 
-#include <stdio.h>
-
+    void moverRainha(int casas){
+            if(casas > 0){
+                printf("esquerda\n");
+                moverRainha(casas - 1);
+            }
+    }
+    
 int main(){
     
-    int t = 0, b = 0, r = 0;
+    int i = 0, j = 0, k = 0,movimentocompleto = 1, l = 0;
     printf("Jogo de Xadrez\n");
     printf("Tabuleiro 8x8\n");
     printf("Colunas: a b c d e f g h\n");
     printf("Linhas: 1 2 3 4 5 6 7 8\n");
+
     printf("Movimento da Torre:\n");
 
-    for (t = 0; t < 5;t++){
-        printf("Direita\n");
+        moverTorre(5);
 
-    }
+        
+    printf("movimento do bispo:\n");
+        moverBispo(5);
+        
     
-       printf("movimento do bispo:\n");
-    while (b < 5){
-        printf("Diagonal direita para cima\n");
-      
-        b++;
-     }
+    
    
-        printf("Movimento da Rainha\n");
-    
-    do {
-        printf("Direita\n");
-        r++;
+    printf("Movimento da Rainha\n");
+        moverRainha(8);          
 
-    } while (r < 8);
-    
-
-    printf(" Fim das jogadas\n");
+        
+       printf("Movimento do Cavalo\n");
+    while(movimentocompleto--)
+    {
+            
+        for(l = 0; l < 2; l++)
+        {
+            printf("cima\n");
+        }
+            printf("direita\n");
+    }
+        
+      printf(" Fim das jogadas\n");
     
 
         
@@ -42,6 +65,8 @@ int main(){
 
     return 0;
 }
+
+
 
     
     
